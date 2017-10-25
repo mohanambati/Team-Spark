@@ -1,15 +1,15 @@
 Requirement Report for Ghost
-----------------------------
+----------------
 
-##### Final Assurance claims:
+#### Final Assurance claims
 
-1.      Ghost Login module successfully averts session hijacking.
-2.      Ghost Login Module has no exploitable SQL_injection weaknesses
-3.      The Ghost User Story Module has mitigated all privilege escalations
-4.      Ghost code injection module has no exploitable XSS Weaknesses
-5.      Ghost system has no API Authentication weaknesses
+1. 		Ghost Login module successfully averts session hijacking.
+2. 		Ghost Login Module has no exploitable SQL_injection weaknesses
+3. 		The Ghost User Story Module has mitigated all privilege escalations
+4. 		Ghost code injection module has no exploitable XSS Weaknesses
+5. 		Ghost system has no API Authentication weaknesses
 
-##### Security Requirements
+#### Security Requirements
 
 [Click here for Misuse Cases](https://www.lucidchart.com/users/registerOrLogin/free?showLogin=false&instructionMessage=Accept+invitation+to+%27Team+Spark+Misusecases%27&psuedoEditorTitle=Team+Spark+Misusecases)
 
