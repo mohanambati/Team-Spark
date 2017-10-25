@@ -43,7 +43,14 @@
 Ghost advertises itself as a Platform as a service for hosting a blog. Some of the features advertised under Pass are ensuring data security, role privilege access. Also, Ghost advertises of providing SSL by default and isolated applications, firewalls and spam protection. 
 
 Ghost is built on Restful JSON API, and the data access is handled by the API. Since Ghost uses RESTFUL principles, SSL plays a vital role in securing the data access over the resource oriented URLS. The URLS are easily guessable.
+#### [Privilege Escalation]()
 
+#### [User Authentication](https://api.ghost.org/docs/client-authentication)
+
+
+#### [API Authentication](https://api.ghost.org/docs/client-authentication)
 The security requirements we could extract from the documentation were related to the use of the Restful Json API for secure access of data over the blog. The restful json API makes use of the HTTP authorizations provide private access.
 
 To provide better secure access to the data hosted, ghost divides the API in to two, a Public API and a private API. The data access is provided by client authentication a oAuth client authentication for authentication by public clients which are not secure.
+
+#### [SQL Injection]()
