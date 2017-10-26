@@ -45,3 +45,35 @@ The security requirements we could extract from the documentation were related t
 To provide better secure access to the data hosted, ghost divides the API in to two, a Public API and a private API. The data access is provided by client authentication a oAuth client authentication for authentication by public clients which are not secure.
 
 #### [SQL Injection]()
+
+
+### Security related Configiration
+
+We can add a custom configuration file to override Ghost's default behaviour. Ghost's configuration is managed by nconf which is a custom configuration JSON file and must be located in the root folder.
+
+#### [Ghost Environment](https://docs.ghost.org/docs/config) 
+
+Ghost uses Node.js which has the concept of environments. It has two built in environment modes development and production. 
+
+development environment | production environment
+---|---
+config.development.json | config.production.json
+
+
+Development environment is used when developing and debugging ghost where as production environment is used in live blog. By default ghost is configured in development mode. In production we need to set a configuration variable NODE_ENV to production. This will mitigates the loss of sensitive data.
+
+#### [Mail Config](https://docs.ghost.org/docs/mail-config)
+A mail service should be configured in ghost so that ghost sends email such as forgotten password and user invitation mail. Wrong configuration of this service will lead to loss of sensitive data and privilages.
+
+#### [Admin URL](https://docs.ghost.org/docs/cli-knowledge-base#section-ssl)
+Ghost has congiration option for securing URL's using SSL. We need to specify that admin URL as HTTPS instead of HTTP because without SSL the username and password entered in any URL is a plain text. By this network sniffers will not able to interpret the exchanged data.
+
+#### Privacy Config
+Ghost provides a mechanisam where we can turn off all the unused featured in the application. This features should be listed a [PRIVACY.md](https://github.com/TryGhost/Ghost/blob/master/PRIVACY.md) file.
+
+#### Automatic Update check
+Ghost introduced an automatic update check service to let you know when a new version of Ghost is available (woo!). Ghost.org collects basic anonymous usage statistics from update check requests.
+
+See [PRIVACY.md#automatic-update-checks](https://github.com/TryGhost/Ghost/blob/master/PRIVACY.md#automatic-update-checks) for more details.
+
+
