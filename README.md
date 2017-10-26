@@ -49,7 +49,7 @@ To provide better secure access to the data hosted, ghost divides the API in to 
 
 ### Security related Configiration
 
-We can add a custom configuration file to override Ghost's default behaviour. Ghost's configuration is managed by nconf which is a custom configuration JSON file and must be located in the root folder.
+We can add a custom configuration file to override Ghost's default behaviour. Ghost's configuration is managed by [nconf](https://github.com/indexzero/nconf) which is a custom configuration JSON file and must be located in the root folder.
 
 #### [Ghost Environment](https://docs.ghost.org/docs/config) 
 
