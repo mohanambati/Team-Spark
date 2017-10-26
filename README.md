@@ -98,5 +98,5 @@ Caching for sitemaps, redirects or assets can be configured via the caching prop
 See [caching configuration in Ghost](https://github.com/TryGhost/Ghost/blob/master/core/server/config/defaults.json#L57).
 
 ### Installation Issues
-* Ghost documentation local installation procedure is mainly focued on ghost theme development. It lacks more information about Ghost-Admin installation procedure.
+* Ghost documentation for installing ghost in local server is mainly focued on ghost theme development. It lacks more information about Ghost-Admin installation procedure.
 * In Ghost-Admin installation procedure, documentation is missing the details of SQL Server installation that needs to be installed before installing the application. 
