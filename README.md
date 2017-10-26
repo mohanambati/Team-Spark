@@ -86,4 +86,13 @@ Ghost uses other third party services for specific functionality within ghost.
 These can be disabled if they are not used.
 
 #### Maintainence Mode
+Ghost has a Maintainance Mode that will serve 503 HTTP response. We need to make sure that Maintainence Mode should be turn on while debugging the application.
 
+#### Logging
+We can configure what detailed should be logged. We need to take care of logs so that they should not reveal any sensitive data.
+
+#### Spam and Cache settings
+You can tell Ghost how to treat spam requests. See [spam configuration in Ghost](https://github.com/TryGhost/Ghost/blob/master/core/server/config/defaults.json#L26).
+
+Caching for sitemaps, redirects or assets can be configured via the caching property.
+See [caching configuration in Ghost](https://github.com/TryGhost/Ghost/blob/master/core/server/config/defaults.json#L57).
