@@ -71,9 +71,19 @@ Ghost has congiration option for securing URL's using SSL. We need to specify th
 #### Privacy Config
 Ghost provides a mechanisam where we can turn off all the unused featured in the application. This features should be listed a [PRIVACY.md](https://github.com/TryGhost/Ghost/blob/master/PRIVACY.md) file.
 
-#### Automatic Update check
+###### *Automatic Update check*
 Ghost introduced an automatic update check service to let you know when a new version of Ghost is available (woo!). Ghost.org collects basic anonymous usage statistics from update check requests.
 
 See [PRIVACY.md#automatic-update-checks](https://github.com/TryGhost/Ghost/blob/master/PRIVACY.md#automatic-update-checks) for more details.
 
+###### *Third party services*
+Ghost uses other third party services for specific functionality within ghost. 
+1. Gravatar [PRIVACY.md#gravatar](https://github.com/TryGhost/Ghost/blob/master/PRIVACY.md#gravatar)
+2. RPC Pings [PRIVACY.md#rpc-pings](https://github.com/TryGhost/Ghost/blob/master/PRIVACY.md#rpc-pings)
+3. Structured Data[PRIVACY.md#structured-data](https://github.com/TryGhost/Ghost/blob/master/PRIVACY.md#structured-data)
+4. Default Theme
+
+These can be disabled if they are not used.
+
+#### Maintainence Mode
 
